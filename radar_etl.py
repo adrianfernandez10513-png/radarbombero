@@ -7,7 +7,7 @@ Uso:
 Salida: data/docs.json (todo lo encontrado) y data/convocatorias.json (fichas para la web).
 Solo librería estándar. Fuente: BOE datos abiertos (reutilización con cita de la fuente).
 """
-import argparse, hashlib, html, json, re, sys, time, urllib.error, urllib.request
+import argparse, hashlib, html, json, re, sys, time, unicodedata, urllib.error, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta
 from email.utils import parsedate_to_datetime
@@ -24,6 +24,47 @@ DATA = Path("data")
 NUM = {"cinco": 5, "diez": 10, "quince": 15, "veinte": 20, "veinticinco": 25, "treinta": 30}
 ORDEN = {"convocatoria": 0, "admitidos": 2, "examen": 3, "resultados": 4, "nombramiento": 5}
 FASE = {0: "previsto", 2: "admitidos", 3: "examen", 4: "resultados", 5: "curso"}
+
+# provincia (con alias) -> comunidad
+_PROV = {
+ "Andalucía": ["Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla"],
+ "Aragón": ["Huesca", "Teruel", "Zaragoza"], "Asturias": ["Asturias"], "Baleares": ["Illes Balears|Baleares|Islas Baleares"],
+ "Canarias": ["Las Palmas", "Santa Cruz de Tenerife"], "Cantabria": ["Cantabria"],
+ "Castilla y León": ["Ávila", "Burgos", "León", "Palencia", "Salamanca", "Segovia", "Soria", "Valladolid", "Zamora"],
+ "Castilla-La Mancha": ["Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo"],
+ "Cataluña": ["Barcelona", "Girona|Gerona", "Lleida|Lérida", "Tarragona"],
+ "Comunidad Valenciana": ["Alicante|Alacant", "Castellón|Castelló", "Valencia|València"],
+ "Extremadura": ["Badajoz", "Cáceres"], "Galicia": ["A Coruña|La Coruña|Coruña", "Lugo", "Ourense|Orense", "Pontevedra"],
+ "Madrid": ["Madrid"], "Murcia": ["Murcia"], "Navarra": ["Navarra"],
+ "País Vasco": ["Álava|Araba", "Gipuzkoa|Guipúzcoa", "Bizkaia|Vizcaya"], "La Rioja": ["La Rioja"],
+ "Ceuta": ["Ceuta"], "Melilla": ["Melilla"]}
+
+
+def norm(t):
+    return "".join(c for c in unicodedata.normalize("NFD", t.lower()) if unicodedata.category(c) != "Mn")
+
+
+PROV_ALIAS = {}  # alias normalizado -> (nombre canónico, comunidad)
+for _cc, _lst in _PROV.items():
+    for _p in _lst:
+        _names = _p.split("|")
+        for _n in _names:
+            PROV_ALIAS[norm(_n)] = (_names[0], _cc)
+_ALT = "|".join(re.escape(a) for a in sorted(PROV_ALIAS, key=len, reverse=True))
+_CTX = re.compile(r"(?:provincia de|\(|diputacion (?:provincial |foral )?de|ayuntamiento de|cabildo (?:insular )?de)\s*(" + _ALT + r")\b")
+
+
+def provincia(*textos):
+    for t in textos:
+        m = _CTX.search(norm(t))
+        if m: return PROV_ALIAS[m.group(1)]
+    return ("", "")
+
+
+def ref_bop(body):
+    """Referencia al BOP donde se publicaron las bases, si el anuncio del BOE la cita."""
+    m = re.search(r"Bolet[ií]n Oficial de la Provincia[^.]{0,120}?n\.?\s?[º°o]\s?(\d+)[^.]{0,40}?(\d{1,2} de [a-záéíóú]+ de \d{4})", body, re.I)
+    return {"num": m.group(1), "fecha": m.group(2)} if m else None
 
 
 def http_get(url, accept=None, retries=3):
@@ -118,7 +159,8 @@ def plazo_estimado(texto, publicado):
 
 def build_doc(id_, fecha, titulo, url, texto, fuente):
     full = f"{titulo} {texto}"
-    return {"id": id_, "fecha": fecha, "titulo": titulo, "url": url, "fuente": fuente,
+    prov, cc = provincia(titulo, texto[:3000])
+    return {"prov": prov, "cc": cc, "bop": ref_bop(texto), "id": id_, "fecha": fecha, "titulo": titulo, "url": url, "fuente": fuente,
             "entidad": entidad(titulo) or entidad(texto[:600]), "tipo": tipo_plaza(titulo + " " + texto[:1500]),
             "doc": tipo_doc(titulo), "plazas": plazas(titulo + " " + texto[:1500]),
             "grupo": (re.search(r"\b(?:grupo|subgrupo)\s*(C1|C2)\b", full, re.I) or [None, ""])[1].upper(),
@@ -147,18 +189,36 @@ def fetch_boe(dia, seen, pausa):
     return out
 
 
+def _local(tag):
+    return tag.rsplit("}", 1)[-1]
+
+
+def _child(it, k):
+    return next((c for c in it if _local(c.tag) == k), None)
+
+
+def _txt(c):
+    return (c.text or "").strip() if c is not None else ""
+
+
 def fetch_rss(src, seen):
-    """Boletín provincial con RSS. Añade la URL real en sources.json tras comprobarla."""
+    """Boletín provincial con RSS o Atom (ver bop_discover.py para localizar los feeds)."""
     raw = http_get(src["url"])
     if not raw: return []
     out = []
-    for it in ET.fromstring(raw).iter("item"):
-        t, l, d = (it.findtext(k) or "" for k in ("title", "link", "description"))
+    for it in ET.fromstring(raw).iter():
+        if _local(it.tag) not in ("item", "entry"): continue
+        lc = _child(it, "link")
+        t, l = _txt(_child(it, "title")), (lc.get("href") if lc is not None and lc.get("href") else _txt(lc))
+        d = _txt(_child(it, "description")) or _txt(_child(it, "summary")) or _txt(_child(it, "content"))
         id_ = "rss-" + hashlib.md5(l.encode()).hexdigest()[:10]
         if id_ in seen or not KEYWORDS.search(t + " " + d): continue
         seen.add(id_)
-        try: f = parsedate_to_datetime(it.findtext("pubDate")).date().isoformat()
-        except Exception: f = date.today().isoformat()
+        pub = _txt(_child(it, "pubDate")) or _txt(_child(it, "published")) or _txt(_child(it, "updated"))
+        try: f = parsedate_to_datetime(pub).date().isoformat()
+        except Exception:
+            try: f = date.fromisoformat(pub[:10]).isoformat()
+            except Exception: f = date.today().isoformat()
         out.append(build_doc(id_, f, t, l, strip_html(d), src["nombre"]))
     return out
 
@@ -176,6 +236,7 @@ def build(docs, overrides, hoy):
                                     "pl": 0, "tipo": d["tipo"], "g": "", "sis": "", "tasa": None, "bolsa": False,
                                     "plazo": None, "docs": [], "_o": 0})
         f["docs"].append({k: d[k] for k in ("id", "fecha", "doc", "titulo", "url", "fuente")})
+        f["prov"] = d["prov"] or f["prov"]; f["cc"] = d["cc"] or f["cc"]; f["bop"] = d["bop"] or f.get("bop")
         f["pl"] = max(f["pl"], d["plazas"]); f["g"] = d["grupo"] or f["g"]
         f["sis"] = d["sistema"] if d["doc"] == "convocatoria" else f["sis"] or d["sistema"]
         f["bolsa"] = f["bolsa"] or d["bolsa"]; f["plazo"] = d["plazo"] or f["plazo"]

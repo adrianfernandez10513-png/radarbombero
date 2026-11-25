@@ -127,7 +127,7 @@ else if(d.fase==="previsto")when=`<span class="when">Plazo sin fecha confirmada<
 const star=S.seg.has(d.id);
 const docs=(d.docs||[]).slice().sort((a,b)=>b.fecha.localeCompare(a.fecha));
 return `<article class="card"><div><h3>${esc(d.n)}</h3>${loc?`<div class="meta">${esc(loc)}</div>`:""}
-<div class="tags"><span class="tag red">${esc(TIPO[d.tipo]||d.tipo)}</span>${d.pl?`<span class="tag">${d.pl} plazas</span>`:""}${d.g?`<span class="tag">Grupo ${esc(d.g)}</span>`:""}${d.sis?`<span class="tag">${esc(d.sis)}</span>`:""}${d.bolsa?`<span class="tag">Bolsa</span>`:""}${isNew(d.nd)?`<span class="tag new">Nuevo</span>`:""}</div></div>
+<div class="tags"><span class="tag red">${esc(TIPO[d.tipo]||d.tipo)}</span>${d.pl?`<span class="tag">${d.pl} plazas</span>`:""}${d.g?`<span class="tag">Grupo ${esc(d.g)}</span>`:""}${d.sis?`<span class="tag">${esc(d.sis)}</span>`:""}${d.bolsa?`<span class="tag">Bolsa</span>`:""}${d.bop?`<span class="tag">Bases en BOP nº ${esc(d.bop.num)} (${esc(d.bop.fecha)})</span>`:""}${isNew(d.nd)?`<span class="tag new">Nuevo</span>`:""}</div></div>
 <button class="star" data-id="${esc(d.id)}" aria-pressed="${star}" aria-label="${star?"Dejar de seguir":"Seguir"} ${esc(d.n)}">${star?"★":"☆"}</button>
 <div class="track"><div class="steps">${steps}</div><div class="labels">${labels}</div></div>
 <div class="news"><span>${esc(d.nov)} <em>· ${ago(d.nd)}</em></span>${when}</div>
