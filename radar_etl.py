@@ -13,7 +13,7 @@ from datetime import date, datetime, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
-UA = "radar-bomberos/0.1 (proyecto personal; contacto: TU_EMAIL)"
+UA = "radar-bomberos/0.1 (proyecto personal; contacto: https://github.com/adrianfernandez10513/radarbombero)"
 BOE_SUMARIO = "https://www.boe.es/datosabiertos/api/boe/sumario/{d}"
 KEYWORDS = re.compile(r"\bbomberos?\b|extinci[oó]n de incendios|prevenci[oó]n y extinci[oó]n", re.I)
 GENERIC = re.compile(r"convocatoria|bases|pruebas selectivas|proveer|plazas?\b", re.I)
