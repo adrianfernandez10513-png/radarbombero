@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radar de convocatorias de bombero</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#eef0f3;--surface:#fff;--ink:#14202b;--mute:#5d6b78;--line:#d5dae0;--red:#c8321e;--redsoft:#f8e3df;--track:#d5dae0}
+@media (prefers-color-scheme:dark){:root{--bg:#10171e;--surface:#18222c;--ink:#e8edf2;--mute:#92a1ae;--line:#2b3947;--red:#ef6a55;--redsoft:#3a1f1b;--track:#2b3947}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);background:var(--bg);color:var(--ink);font:400 15px/1.5 Barlow,system-ui,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:20px 16px 60px}
+h1,h2,h3{font-family:"Barlow Semi Condensed",system-ui,sans-serif;margin:0}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.05;font-weight:700}
+.sub{color:var(--mute);margin:6px 0 0}
+.note{margin:14px 0 0;padding:8px 12px;border-left:3px solid var(--red);background:var(--redsoft);font-size:13px;border-radius:0 6px 6px 0}
+.phases{display:flex;gap:6px;flex-wrap:wrap;margin:20px 0 12px}
+.ph{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 12px;border-radius:999px;font:500 14px Barlow,sans-serif;cursor:pointer}
+.ph b{font-family:"Barlow Semi Condensed",sans-serif;margin-left:4px;color:var(--red)}
+.ph[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.ph[aria-pressed="true"] b{color:var(--bg)}
+.bar{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:8px;margin-bottom:10px}
+.bar input,.bar select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}
+.bar2{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:16px;font-size:14px}
+.bar2 label{display:flex;gap:6px;align-items:center;cursor:pointer}
+.tabs{margin-left:auto;display:flex;gap:4px}
+.tab{border:0;background:none;color:var(--mute);font:600 15px "Barlow Semi Condensed",sans-serif;padding:6px 10px;cursor:pointer;border-bottom:2px solid transparent}
+.tab[aria-selected="true"]{color:var(--ink);border-color:var(--red)}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.count{color:var(--mute);font-size:14px;margin:0 0 10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:10px;display:grid;grid-template-columns:1fr auto;gap:6px 14px}
+.card h3{font-size:19px;font-weight:600;line-height:1.2}
+.meta{color:var(--mute);font-size:14px;margin-top:2px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.tag{font-size:12.5px;border:1px solid var(--line);border-radius:5px;padding:1px 7px;color:var(--mute)}
+.tag.red{border-color:var(--red);color:var(--red)}
+.new{background:var(--red);color:#fff;border-color:var(--red)}
+.star{border:1px solid var(--line);background:none;color:var(--mute);border-radius:8px;width:38px;height:38px;font-size:19px;cursor:pointer;align-self:start}
+.star[aria-pressed="true"]{color:var(--red);border-color:var(--red);background:var(--redsoft)}
+.track{grid-column:1/-1;margin-top:8px}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
+.steps i{height:6px;border-radius:3px;background:var(--track)}
+.steps i.done{background:var(--ink)}.steps i.now{background:var(--red)}
+.labels{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;font-size:11.5px;color:var(--mute);margin-top:3px}
+.labels span.now{color:var(--red);font-weight:600}
+.news{grid-column:1/-1;font-size:14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
+.news em{font-style:normal;color:var(--mute)}
+.when{font:600 13px "Barlow Semi Condensed",sans-serif;color:var(--red)}
+details{grid-column:1/-1;font-size:14px;margin-top:4px}
+summary{cursor:pointer;color:var(--mute)}
+details ul{margin:6px 0 0;padding-left:18px}
+a{color:var(--red)}
+.tl h2{font-size:18px;margin:20px 0 8px}
+.ev{display:grid;grid-template-columns:78px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.ev time{font:600 14px "Barlow Semi Condensed",sans-serif;color:var(--mute)}
+.empty{padding:30px 16px;text-align:center;color:var(--mute);border:1px dashed var(--line);border-radius:10px}
+footer{margin-top:30px;color:var(--mute);font-size:13px}
+@media(max-width:720px){.bar{grid-template-columns:1fr 1fr}.bar input{grid-column:1/-1}.labels{font-size:10px}.tabs{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Radar de convocatorias de bombero</h1>
+<p class="sub" id="upd">Cargando datos…</p>
+<div class="note">Los plazos son estimaciones calculadas desde la publicación en el BOE. Comprueba siempre el boletín oficial antes de presentar nada.</div>
+</header>
+<div class="phases" id="phases" role="group" aria-label="Fase"></div>
+<div class="bar">
+<input id="q" type="search" placeholder="Buscar por entidad o provincia" aria-label="Buscar">
+<select id="tipo" aria-label="Tipo de plaza"><option value="">Todas las plazas</option><option value="bombero">Bombero</option><option value="conductor">Bombero-conductor</option><option value="especialista">Especialista</option></select>
+<select id="grupo" aria-label="Grupo"><option value="">Cualquier grupo</option><option>C1</option><option>C2</option></select>
+<select id="orden" aria-label="Ordenar"><option value="nov">Más recientes</option><option value="plazas">Más plazas</option><option value="nombre">Nombre</option></select>
+</div>
+<div class="bar2">
+<label><input type="checkbox" id="bolsa"> Solo con bolsa de empleo</label>
+<label><input type="checkbox" id="seg"> Solo seguidas (<span id="nseg">0</span>)</label>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" aria-selected="true" data-v="nov">Movimientos</button>
+<button class="tab" role="tab" aria-selected="false" data-v="lista">Convocatorias</button>
+</div>
+</div>
+<p class="count" id="count"></p>
+<div id="out"></div>
+<footer>Fuente: BOE (datos abiertos) y boletines provinciales. Cada movimiento enlaza a su publicación oficial.</footer>
+</div>
+<script>
+const PH=[["previsto","Previsto"],["plazo","Plazo"],["admitidos","Admitidos"],["examen","Examen"],["resultados","Resultados"],["curso","Curso"]];
+const IDX={previsto:0,abierto:1,cerrado:1,admitidos:2,examen:3,resultados:4,curso:5};
+const TIPO={bombero:"Bombero",conductor:"Bombero-conductor",especialista:"Especialista"};
+const DOC={convocatoria:"Convocatoria",correccion:"Corrección de errores",admitidos:"Lista de admitidos",examen:"Examen o tribunal",resultados:"Resultados",nombramiento:"Nombramiento"};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safe=u=>/^https?:\/\//.test(u||"")?esc(u):"#";
+const today=new Date();today.setHours(0,0,0,0);
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const dd=s=>new Date(s+"T00:00:00");
+const fmt=s=>dd(s).toLocaleDateString("es-ES",{day:"numeric",month:"short",year:"numeric"});
+const ago=s=>{const n=Math.round((today-dd(s))/864e5);return n<=0?"hoy":n===1?"ayer":n<31?"hace "+n+" días":n<365?"hace "+Math.round(n/30)+" meses":"hace más de un año"};
+let F=[],lastVisit="",S={fase:"",view:"nov",seg:new Set()};
+try{JSON.parse(localStorage.getItem("seg")||"[]").forEach(x=>S.seg.add(x));lastVisit=localStorage.getItem("ultima")||""}catch(e){}
+const save=()=>{try{localStorage.setItem("seg",JSON.stringify([...S.seg]))}catch(e){}};
+const isNew=f=>lastVisit&&f>lastVisit;
+
+function filtered(ignoreFase){
+const q=$("q").value.trim().toLowerCase(),t=$("tipo").value,g=$("grupo").value;
+let r=F.filter(d=>(!q||(d.n+" "+d.prov+" "+d.cc).toLowerCase().includes(q))&&(!t||d.tipo===t)&&(!g||d.g===g)&&(!$("bolsa").checked||d.bolsa)&&(!$("seg").checked||S.seg.has(d.id)));
+if(!ignoreFase&&S.fase)r=r.filter(d=>PH[IDX[d.fase]][0]===S.fase);
+const o=$("orden").value;
+r.sort((a,b)=>o==="plazas"?b.pl-a.pl:o==="nombre"?a.n.localeCompare(b.n,"es"):b.nd.localeCompare(a.nd));
+return r}
+function phases(){
+const base=filtered(true);
+const all=[["","Todas",base.length],...PH.map(p=>[p[0],p[1],base.filter(d=>PH[IDX[d.fase]][0]===p[0]).length])];
+$("phases").innerHTML=all.map(p=>`<button class="ph" aria-pressed="${S.fase===p[0]}" data-f="${p[0]}">${p[1]}<b>${p[2]}</b></button>`).join("")}
+
+function card(d){
+const k=IDX[d.fase],closed=d.fase==="cerrado";
+const steps=PH.map((p,i)=>`<i class="${i<k?"done":i===k?"now":""}"></i>`).join("");
+const labels=PH.map((p,i)=>`<span class="${i===k?"now":""}">${p[1]}</span>`).join("");
+const loc=[d.prov,d.cc].filter(Boolean).join(", ");
+let when="";
+if(d.plazo&&d.fase==="abierto")when=`<span class="when">Plazo abierto hasta el ${fmt(d.plazo)} (estimado)</span>`;
+else if(d.plazo&&closed)when=`<span class="when">Plazo cerrado el ${fmt(d.plazo)} (estimado)</span>`;
+else if(d.fase==="previsto")when=`<span class="when">Plazo sin fecha confirmada</span>`;
+const star=S.seg.has(d.id);
+const docs=(d.docs||[]).slice().sort((a,b)=>b.fecha.localeCompare(a.fecha));
+return `<article class="card"><div><h3>${esc(d.n)}</h3>${loc?`<div class="meta">${esc(loc)}</div>`:""}
+<div class="tags"><span class="tag red">${esc(TIPO[d.tipo]||d.tipo)}</span>${d.pl?`<span class="tag">${d.pl} plazas</span>`:""}${d.g?`<span class="tag">Grupo ${esc(d.g)}</span>`:""}${d.sis?`<span class="tag">${esc(d.sis)}</span>`:""}${d.bolsa?`<span class="tag">Bolsa</span>`:""}${isNew(d.nd)?`<span class="tag new">Nuevo</span>`:""}</div></div>
+<button class="star" data-id="${esc(d.id)}" aria-pressed="${star}" aria-label="${star?"Dejar de seguir":"Seguir"} ${esc(d.n)}">${star?"★":"☆"}</button>
+<div class="track"><div class="steps">${steps}</div><div class="labels">${labels}</div></div>
+<div class="news"><span>${esc(d.nov)} <em>· ${ago(d.nd)}</em></span>${when}</div>
+<details><summary>${docs.length} ${docs.length===1?"documento":"documentos"}</summary><ul>${docs.map(x=>`<li>${fmt(x.fecha)} · ${esc(DOC[x.doc]||x.doc)} · <a href="${safe(x.url)}" target="_blank" rel="noopener">${esc(x.fuente||"Ver")}</a></li>`).join("")}</ul></details></article>`}
+
+function timeline(r){
+const ev=[];r.forEach(f=>(f.docs||[]).forEach(x=>ev.push({f,x})));
+ev.sort((a,b)=>b.x.fecha.localeCompare(a.x.fecha));
+const g={"Esta semana":[],"Este mes":[],"Antes":[]};
+ev.forEach(e=>{const n=(today-dd(e.x.fecha))/864e5;(n<=7?g["Esta semana"]:n<=30?g["Este mes"]:g["Antes"]).push(e)});
+return `<div class="tl">`+Object.entries(g).filter(e=>e[1].length).map(([t,l])=>`<h2>${t}</h2>`+l.map(({f,x})=>`<div class="ev"><time datetime="${esc(x.fecha)}">${dd(x.fecha).toLocaleDateString("es-ES",{day:"numeric",month:"short"})}</time><div><b>${esc(DOC[x.doc]||x.doc)}</b> · ${esc(f.n)} ${isNew(x.fecha)?`<span class="tag new">Nuevo</span>`:""}<div class="meta">${esc(TIPO[f.tipo]||f.tipo)}${f.pl?" · "+f.pl+" plazas":""} · <a href="${safe(x.url)}" target="_blank" rel="noopener">${esc(x.fuente||"Ver publicación")}</a></div></div></div>`).join("")).join("")+`</div>`}
+
+function render(){
+phases();
+const r=filtered();
+$("nseg").textContent=S.seg.size;
+$("count").textContent=r.length+(r.length===1?" convocatoria":" convocatorias");
+$("out").innerHTML=!r.length?`<div class="empty">No hay convocatorias con estos filtros, o todavía no se han cargado datos.</div>`:S.view==="lista"?r.map(card).join(""):timeline(r)}
+
+document.addEventListener("click",e=>{
+const f=e.target.closest(".ph");if(f){S.fase=f.dataset.f;render();return}
+const s=e.target.closest(".star");if(s){const id=s.dataset.id;S.seg.has(id)?S.seg.delete(id):S.seg.add(id);save();render();return}
+const t=e.target.closest(".tab");if(t){S.view=t.dataset.v;document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected",x===t));render()}});
+["q","tipo","grupo","orden","bolsa","seg"].forEach(id=>$(id).addEventListener("input",render));
+
+fetch("data/convocatorias.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(j=>{
+F=j.fichas||[];
+$("upd").textContent="Datos actualizados el "+fmt(j.actualizado)+(lastVisit?" · tu última visita: "+fmt(lastVisit):"");
+render();
+try{localStorage.setItem("ultima",iso(today))}catch(e){}
+}).catch(()=>{$("upd").textContent="Aún no hay datos. Ejecuta el workflow «Actualizar convocatorias» en GitHub Actions.";render()});
+</script>
+</body>
+</html>
