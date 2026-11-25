@@ -1,0 +1,929 @@
+{
+ "actualizado": "2026-11-25",
+ "fichas": [
+  {
+   "id": "sin-entidad-bombero",
+   "n": "Entidad sin identificar",
+   "prov": "Granada",
+   "cc": "Andalucía",
+   "pl": 9,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-12-09",
+   "docs": [
+    {
+     "id": "BOE-A-2026-18605",
+     "fecha": "2026-09-04",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 27 de agosto de 2026, del Consorcio para la Gestión del Servicio de Prevención y Extinción de Incendios de la Diputación Provincial de Badajoz, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18605",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-18938",
+     "fecha": "2026-09-10",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 2 de septiembre de 2026, del Consorcio Comarcal para la Prestación del Servicio de Prevención y Extinción de Incendios y Salvamento de la Comarca Sierra de Cazorla (Jaén), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18938",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-19080",
+     "fecha": "2026-09-12",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 2 de septiembre de 2026, del Consorcio Comarcal para la Prestación del Servicio de Prevención y Extinción de Incendios y Salvamento de la Comarca Sierra de Segura (Jaén), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19080",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-19093",
+     "fecha": "2026-09-12",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 4 de septiembre de 2026, de la Diputación Provincial de Albacete, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19093",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-19139",
+     "fecha": "2026-09-14",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 5 de septiembre de 2026, de la Ciudad Autónoma de Ceuta, referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19139",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-19731",
+     "fecha": "2026-09-23",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 15 de septiembre de 2026, de la Diputación Provincial de Granada, Organismo Autónomo Agencia Provincial de Extinción de Incendios, referente a la convocatoria para proveer una plaza.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19731",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-20411",
+     "fecha": "2026-10-01",
+     "doc": "convocatoria",
+     "titulo": "Resolución 1351/2026, de 15 de mayo, de la Dirección Gerencia de la Red de Salud Mental de Bizkaia, por la que se convoca concurso para la provisión de puesto de trabajo de Jefe/a de Unidad de Salud Mental del Centro de Salud Mental de Adultos de Bombero Etxaniz.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20411",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-23807",
+     "fecha": "2026-11-13",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 10 de noviembre de 2026, de la Diputación Provincial de Cuenca, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23807",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-24746",
+     "fecha": "2026-11-25",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 18 de noviembre de 2026, de la Diputación Provincial de Granada, Organismo Autónomo Agencia Provincial de Extinción de Incendios, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24746",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-25",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-almeria-bombero",
+   "n": "Ayuntamiento de Almería",
+   "prov": "Almería",
+   "cc": "Andalucía",
+   "pl": 5,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-12-22",
+   "docs": [
+    {
+     "id": "BOE-A-2026-21831",
+     "fecha": "2026-10-20",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 14 de octubre de 2026, del Ayuntamiento de Almería, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21831",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-24641",
+     "fecha": "2026-11-24",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 17 de noviembre de 2026, del Ayuntamiento de Almería, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24641",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-24",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-la-oliva-las-palmas-conductor",
+   "n": "Ayuntamiento de La Oliva (Las Palmas)",
+   "prov": "Las Palmas",
+   "cc": "Canarias",
+   "pl": 5,
+   "tipo": "conductor",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-12-22",
+   "docs": [
+    {
+     "id": "BOE-A-2026-24660",
+     "fecha": "2026-11-24",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 18 de noviembre de 2026, del Ayuntamiento de La Oliva (Las Palmas), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24660",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-24",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
+  {
+   "id": "sin-entidad-especialista",
+   "n": "Entidad sin identificar",
+   "prov": "Cáceres",
+   "cc": "Extremadura",
+   "pl": 1,
+   "tipo": "especialista",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-12-22",
+   "docs": [
+    {
+     "id": "BOE-A-2026-24669",
+     "fecha": "2026-11-24",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 18 de noviembre de 2026, de la Diputación Provincial de Cáceres, referente a la convocatoria para proveer una plaza.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24669",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-24",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-castello-de-la-plana-castellon-castello-bombero",
+   "n": "Ayuntamiento de Castelló de la Plana (Castellón/Castelló)",
+   "prov": "Castellón",
+   "cc": "Comunidad Valenciana",
+   "pl": 2,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-12-01",
+   "docs": [
+    {
+     "id": "BOE-A-2026-20044",
+     "fecha": "2026-09-28",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 17 de septiembre de 2026, del Ayuntamiento de Castelló de la Plana (Castellón/Castelló), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20044",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-24079",
+     "fecha": "2026-11-17",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Castelló de la Plana (Castellón/Castelló), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24079",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-17",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-alacant-alicante-bombero",
+   "n": "Ayuntamiento de Alacant/Alicante",
+   "prov": "Alicante",
+   "cc": "Comunidad Valenciana",
+   "pl": 2,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": null,
+   "docs": [
+    {
+     "id": "BOE-A-2026-23855",
+     "fecha": "2026-11-14",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 6 de noviembre de 2026, del Ayuntamiento de Alacant/Alicante, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23855",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-14",
+   "fase": "previsto",
+   "plazo_estimado": false
+  },
+  {
+   "id": "ayuntamiento-de-val-ncia-valencia-val-ncia-bombero",
+   "n": "Ayuntamiento de València (Valencia/València)",
+   "prov": "Valencia",
+   "cc": "Comunidad Valenciana",
+   "pl": 5,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-12-07",
+   "docs": [
+    {
+     "id": "BOE-A-2026-23428",
+     "fecha": "2026-11-09",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 30 de octubre de 2026, del Ayuntamiento de València (Valencia/València), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23428",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-09",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-melilla-bombero",
+   "n": "Ayuntamiento de Melilla",
+   "prov": "Melilla",
+   "cc": "Melilla",
+   "pl": 4,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-12-07",
+   "docs": [
+    {
+     "id": "BOE-A-2026-23436",
+     "fecha": "2026-11-09",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 2 de noviembre de 2026, del Ayuntamiento de Melilla, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23436",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-09",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
+  {
+   "id": "consorcio-de-extincion-de-incendios-y-salvamento-del-levante-almeriense-almeria-bombero",
+   "n": "Consorcio de Extinción de Incendios y Salvamento del Levante Almeriense (Almería)",
+   "prov": "Almería",
+   "cc": "Andalucía",
+   "pl": 9,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-11-30",
+   "docs": [
+    {
+     "id": "BOE-A-2026-22818",
+     "fecha": "2026-10-31",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 26 de octubre de 2026, del Consorcio de Extinción de Incendios y Salvamento del Levante Almeriense (Almería), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22818",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-22935",
+     "fecha": "2026-11-02",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 27 de octubre de 2026, del Consorcio de Extinción de Incendios y Salvamento del Levante Almeriense (Almería), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22935",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-02",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
+  {
+   "id": "consorcio-provincial-contra-incendios-e-salvamento-de-a-coru-a-a-coru-a-bombero",
+   "n": "Consorcio Provincial contra Incendios e Salvamento de A Coruña (A Coruña)",
+   "prov": "A Coruña",
+   "cc": "Galicia",
+   "pl": 1,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-11-30",
+   "docs": [
+    {
+     "id": "BOE-A-2026-22941",
+     "fecha": "2026-11-02",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 28 de octubre de 2026, del Consorcio Provincial contra Incendios e Salvamento de A Coruña (A Coruña), referente a la convocatoria para proveer una plaza.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22941",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-02",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-benalmadena-malaga-bombero",
+   "n": "Ayuntamiento de Benalmádena (Málaga)",
+   "prov": "Málaga",
+   "cc": "Andalucía",
+   "pl": 4,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-11-30",
+   "docs": [
+    {
+     "id": "BOE-A-2026-22943",
+     "fecha": "2026-11-02",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 28 de octubre de 2026, del Ayuntamiento de Benalmádena (Málaga), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22943",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-02",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-torrelavega-cantabria-bombero",
+   "n": "Ayuntamiento de Torrelavega (Cantabria)",
+   "prov": "Cantabria",
+   "cc": "Cantabria",
+   "pl": 8,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-11-15",
+   "docs": [
+    {
+     "id": "BOE-A-2026-20433",
+     "fecha": "2026-10-01",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 25 de septiembre de 2026, del Ayuntamiento de Torrelavega (Cantabria), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20433",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-22366",
+     "fecha": "2026-10-26",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Torrelavega (Cantabria), referente a la convocatoria para proveer una plaza.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22366",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-10-26",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-valladolid-bombero",
+   "n": "Ayuntamiento de Valladolid",
+   "prov": "Valladolid",
+   "cc": "Castilla y León",
+   "pl": 6,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-11-15",
+   "docs": [
+    {
+     "id": "BOE-A-2026-21987",
+     "fecha": "2026-10-22",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 16 de octubre de 2026, del Ayuntamiento de Valladolid, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21987",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-22139",
+     "fecha": "2026-10-23",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 19 de octubre de 2026, del Ayuntamiento de Valladolid, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22139",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-22375",
+     "fecha": "2026-10-26",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 21 de octubre de 2026, del Ayuntamiento de Valladolid, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22375",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-10-26",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-martos-jaen-conductor",
+   "n": "Ayuntamiento de Martos (Jaén)",
+   "prov": "Jaén",
+   "cc": "Andalucía",
+   "pl": 7,
+   "tipo": "conductor",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-11-18",
+   "docs": [
+    {
+     "id": "BOE-A-2026-21904",
+     "fecha": "2026-10-21",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 15 de octubre de 2026, del Ayuntamiento de Martos (Jaén), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21904",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-10-21",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "consorcio-de-extincion-de-incendios-y-salvamento-de-alicante-alicante-alacant-bombero",
+   "n": "Consorcio de Extinción de Incendios y Salvamento de Alicante (Alicante/Alacant)",
+   "prov": "Alicante",
+   "cc": "Comunidad Valenciana",
+   "pl": 10,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-10-27",
+   "docs": [
+    {
+     "id": "BOE-A-2026-21264",
+     "fecha": "2026-10-13",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 2 de octubre de 2026, del Consorcio de Extinción de Incendios y Salvamento de Alicante (Alicante/Alacant), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21264",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-10-13",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-ferrol-a-coru-a-conductor",
+   "n": "Ayuntamiento de Ferrol (A Coruña)",
+   "prov": "A Coruña",
+   "cc": "Galicia",
+   "pl": 0,
+   "tipo": "conductor",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-11-06",
+   "docs": [
+    {
+     "id": "BOE-A-2026-21131",
+     "fecha": "2026-10-10",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 6 de octubre de 2026, del Ayuntamiento de Ferrol (A Coruña), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21131",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-10-10",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-alcala-de-guadaira-sevilla-bombero",
+   "n": "Ayuntamiento de Alcalá de Guadaíra (Sevilla)",
+   "prov": "Sevilla",
+   "cc": "Andalucía",
+   "pl": 1,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-10-23",
+   "docs": [
+    {
+     "id": "BOE-A-2026-21013",
+     "fecha": "2026-10-09",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 5 de octubre de 2026, del Ayuntamiento de Alcalá de Guadaíra (Sevilla), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21013",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-10-09",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-ourense-bombero",
+   "n": "Ayuntamiento de Ourense",
+   "prov": "Ourense",
+   "cc": "Galicia",
+   "pl": 4,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-10-28",
+   "docs": [
+    {
+     "id": "BOE-A-2026-20334",
+     "fecha": "2026-09-30",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 23 de septiembre de 2026, del Ayuntamiento de Ourense, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20334",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-30",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-huesca-bombero",
+   "n": "Ayuntamiento de Huesca",
+   "prov": "Huesca",
+   "cc": "Aragón",
+   "pl": 3,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-10-26",
+   "docs": [
+    {
+     "id": "BOE-A-2026-20057",
+     "fecha": "2026-09-28",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 22 de septiembre de 2026, del Ayuntamiento de Huesca, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20057",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-28",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-leon-bombero",
+   "n": "Ayuntamiento de León",
+   "prov": "León",
+   "cc": "Castilla y León",
+   "pl": 0,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-10-16",
+   "docs": [
+    {
+     "id": "BOE-A-2026-19872",
+     "fecha": "2026-09-25",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 18 de septiembre de 2026, del Ayuntamiento de León, referente a la convocatoria para proveer puestos de trabajo por el sistema de concurso.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19872",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-25",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "sin-entidad-conductor",
+   "n": "Entidad sin identificar",
+   "prov": "Cuenca",
+   "cc": "Castilla-La Mancha",
+   "pl": 6,
+   "tipo": "conductor",
+   "g": "",
+   "sis": "Oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-10-08",
+   "docs": [
+    {
+     "id": "BOE-A-2026-19802",
+     "fecha": "2026-09-24",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 16 de septiembre de 2026, de la Diputación Provincial de Cuenca, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19802",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-24",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-oviedo-asturias-conductor",
+   "n": "Ayuntamiento de Oviedo (Asturias)",
+   "prov": "Asturias",
+   "cc": "Asturias",
+   "pl": 7,
+   "tipo": "conductor",
+   "g": "",
+   "sis": "Oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-10-14",
+   "docs": [
+    {
+     "id": "BOE-A-2026-19810",
+     "fecha": "2026-09-24",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 17 de septiembre de 2026, del Ayuntamiento de Oviedo (Asturias), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19810",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-24",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-zaragoza-bombero",
+   "n": "Ayuntamiento de Zaragoza",
+   "prov": "Zaragoza",
+   "cc": "Aragón",
+   "pl": 8,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": null,
+   "docs": [
+    {
+     "id": "BOE-A-2026-19150",
+     "fecha": "2026-09-14",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 7 de septiembre de 2026, del Ayuntamiento de Zaragoza, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19150",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-14",
+   "fase": "previsto",
+   "plazo_estimado": false
+  },
+  {
+   "id": "ayuntamiento-de-cuenca-bombero",
+   "n": "Ayuntamiento de Cuenca",
+   "prov": "Cuenca",
+   "cc": "Castilla-La Mancha",
+   "pl": 1,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-10-12",
+   "docs": [
+    {
+     "id": "BOE-A-2026-19153",
+     "fecha": "2026-09-14",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 7 de septiembre de 2026, del Ayuntamiento de Cuenca, referente a la convocatoria para proveer una plaza.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19153",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-14",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "consorcio-para-el-servicio-de-prevencion-bombero",
+   "n": "Consorcio para el Servicio de Prevención",
+   "prov": "Castellón",
+   "cc": "Comunidad Valenciana",
+   "pl": 0,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-09-25",
+   "docs": [
+    {
+     "id": "BOE-A-2026-19022",
+     "fecha": "2026-09-11",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 3 de septiembre de 2026, del Consorcio para el Servicio de Prevención, Extinción de Incendios, Salvamento y Protección Civil de la Provincia de Catellón/Castelló, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19022",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-11",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-las-palmas-de-gran-canaria-las-palmas-bombero",
+   "n": "Ayuntamiento de Las Palmas de Gran Canaria (Las Palmas)",
+   "prov": "Las Palmas",
+   "cc": "Canarias",
+   "pl": 1,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-10-08",
+   "docs": [
+    {
+     "id": "BOE-A-2026-18940",
+     "fecha": "2026-09-10",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 2 de septiembre de 2026, del Ayuntamiento de Las Palmas de Gran Canaria (Las Palmas), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18940",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-10",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-pontevedra-bombero",
+   "n": "Ayuntamiento de Pontevedra",
+   "prov": "Pontevedra",
+   "cc": "Galicia",
+   "pl": 2,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": null,
+   "docs": [
+    {
+     "id": "BOE-A-2026-18857",
+     "fecha": "2026-09-09",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 1 de septiembre de 2026, del Ayuntamiento de Pontevedra, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18857",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-09",
+   "fase": "previsto",
+   "plazo_estimado": false
+  },
+  {
+   "id": "ayuntamiento-de-las-palmas-de-gran-canaria-las-palmas-especialista",
+   "n": "Ayuntamiento de Las Palmas de Gran Canaria (Las Palmas)",
+   "prov": "Las Palmas",
+   "cc": "Canarias",
+   "pl": 8,
+   "tipo": "especialista",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-10-06",
+   "docs": [
+    {
+     "id": "BOE-A-2026-18814",
+     "fecha": "2026-09-08",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 31 de agosto de 2026, del Ayuntamiento de Las Palmas de Gran Canaria (Las Palmas), referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18814",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-08",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  },
+  {
+   "id": "ayuntamiento-de-alcala-la-real-jaen-bombero",
+   "n": "Ayuntamiento de Alcalá la Real (Jaén)",
+   "prov": "Jaén",
+   "cc": "Andalucía",
+   "pl": 1,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-09-30",
+   "docs": [
+    {
+     "id": "BOE-A-2026-18476",
+     "fecha": "2026-09-02",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 25 de agosto de 2026, del Ayuntamiento de Alcalá la Real (Jaén), referente a la convocatoria para proveer una plaza.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18476",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-09-02",
+   "fase": "cerrado",
+   "plazo_estimado": true
+  }
+ ]
+}
