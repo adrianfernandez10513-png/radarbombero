@@ -9,7 +9,7 @@ import json, re, time, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-UA = "radar-bomberos/0.1 (proyecto personal; contacto: https://github.com/adrianfernandez10513/radarbombero)"
+UA = "radar-bomberos/0.1 (proyecto personal; contacto: https://github.com/adrianfernandez10513-png/radarbombero)"
 LINK = re.compile(r"<link\b[^>]*type=[\"']application/(?:rss|atom)\+xml[\"'][^>]*>", re.I)
 HREF = re.compile(r"href=[\"']([^\"']+)", re.I)
 COMUNES = ["/rss", "/feed", "/rss.xml", "/feed.xml", "/atom.xml", "/rss/bop", "/bop/rss"]
