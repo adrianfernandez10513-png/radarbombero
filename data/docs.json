@@ -772,5 +772,23 @@
   "sistema": "Oposición",
   "bolsa": false,
   "plazo": "2026-12-09"
+ },
+ "BOE-A-2026-24878": {
+  "prov": "Palencia",
+  "cc": "Castilla y León",
+  "bop": null,
+  "id": "BOE-A-2026-24878",
+  "fecha": "2026-11-26",
+  "titulo": "Resolución de 20 de noviembre de 2026, del Ayuntamiento de Palencia, referente a la convocatoria para proveer varias plazas.",
+  "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24878",
+  "fuente": "BOE",
+  "entidad": "Ayuntamiento de Palencia",
+  "tipo": "bombero",
+  "doc": "convocatoria",
+  "plazas": 2,
+  "grupo": "",
+  "sistema": "Concurso-oposición",
+  "bolsa": false,
+  "plazo": "2026-12-24"
  }
 }
