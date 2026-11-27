@@ -790,5 +790,23 @@
   "sistema": "Concurso-oposición",
   "bolsa": false,
   "plazo": "2026-12-24"
+ },
+ "BOE-A-2026-24966": {
+  "prov": "Almería",
+  "cc": "Andalucía",
+  "bop": null,
+  "id": "BOE-A-2026-24966",
+  "fecha": "2026-11-27",
+  "titulo": "Resolución de 23 de noviembre de 2026, del Ayuntamiento de Almería, referente a la convocatoria para proveer una plaza.",
+  "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24966",
+  "fuente": "BOE",
+  "entidad": "Ayuntamiento de Almería",
+  "tipo": "bombero",
+  "doc": "convocatoria",
+  "plazas": 1,
+  "grupo": "",
+  "sistema": "Concurso-oposición",
+  "bolsa": false,
+  "plazo": "2026-12-25"
  }
 }

@@ -1,6 +1,50 @@
 {
- "actualizado": "2026-11-26",
+ "actualizado": "2026-11-27",
  "fichas": [
+  {
+   "id": "ayuntamiento-de-almeria-bombero",
+   "n": "Ayuntamiento de Almería",
+   "prov": "Almería",
+   "cc": "Andalucía",
+   "pl": 5,
+   "tipo": "bombero",
+   "g": "",
+   "sis": "Concurso-oposición",
+   "tasa": null,
+   "bolsa": false,
+   "plazo": "2026-12-25",
+   "docs": [
+    {
+     "id": "BOE-A-2026-21831",
+     "fecha": "2026-10-20",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 14 de octubre de 2026, del Ayuntamiento de Almería, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21831",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-24641",
+     "fecha": "2026-11-24",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 17 de noviembre de 2026, del Ayuntamiento de Almería, referente a la convocatoria para proveer varias plazas.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24641",
+     "fuente": "BOE"
+    },
+    {
+     "id": "BOE-A-2026-24966",
+     "fecha": "2026-11-27",
+     "doc": "convocatoria",
+     "titulo": "Resolución de 23 de noviembre de 2026, del Ayuntamiento de Almería, referente a la convocatoria para proveer una plaza.",
+     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24966",
+     "fuente": "BOE"
+    }
+   ],
+   "bop": null,
+   "nov": "Convocatoria",
+   "nd": "2026-11-27",
+   "fase": "abierto",
+   "plazo_estimado": true
+  },
   {
    "id": "ayuntamiento-de-palencia-bombero",
    "n": "Ayuntamiento de Palencia",
@@ -118,42 +162,6 @@
    "bop": null,
    "nov": "Convocatoria",
    "nd": "2026-11-25",
-   "fase": "abierto",
-   "plazo_estimado": true
-  },
-  {
-   "id": "ayuntamiento-de-almeria-bombero",
-   "n": "Ayuntamiento de Almería",
-   "prov": "Almería",
-   "cc": "Andalucía",
-   "pl": 5,
-   "tipo": "bombero",
-   "g": "",
-   "sis": "Concurso-oposición",
-   "tasa": null,
-   "bolsa": false,
-   "plazo": "2026-12-22",
-   "docs": [
-    {
-     "id": "BOE-A-2026-21831",
-     "fecha": "2026-10-20",
-     "doc": "convocatoria",
-     "titulo": "Resolución de 14 de octubre de 2026, del Ayuntamiento de Almería, referente a la convocatoria para proveer varias plazas.",
-     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21831",
-     "fuente": "BOE"
-    },
-    {
-     "id": "BOE-A-2026-24641",
-     "fecha": "2026-11-24",
-     "doc": "convocatoria",
-     "titulo": "Resolución de 17 de noviembre de 2026, del Ayuntamiento de Almería, referente a la convocatoria para proveer varias plazas.",
-     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24641",
-     "fuente": "BOE"
-    }
-   ],
-   "bop": null,
-   "nov": "Convocatoria",
-   "nd": "2026-11-24",
    "fase": "abierto",
    "plazo_estimado": true
   },
